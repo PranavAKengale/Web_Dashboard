@@ -845,7 +845,8 @@ def unempr_s():
 )
     placeholder = st.empty()
     if st.checkbox("Show Dataframe"):
-        st.dataframe(df_combined_s,use_container_width=True)
+        st.dataframe(df_combined_s.style.format({'texas_value': '{:.1f}', 'ohio_value': '{:.1f}', 'cali_value': '{:.1f}',
+        'ny_value': '{:.1f}', 'nj_value': '{:.1f}', 'fl_value': '{:.1f}', 'pn_value': '{:.1f}'}),use_container_width=True) 
 
 #End-------------------------------------------------------------------------------------
 
@@ -935,7 +936,8 @@ def unempr_us():
 )
     placeholder = st.empty()
     if st.checkbox("Show Dataframe"):
-        st.dataframe(df_combined_us,use_container_width=True)
+        st.dataframe(df_combined_us.style.format({'texas_value': '{:.1f}', 'ohio_value': '{:.1f}', 'cali_value': '{:.1f}',
+        'ny_value': '{:.1f}', 'nj_value': '{:.1f}', 'fl_value': '{:.1f}', 'pn_value': '{:.1f}'}),use_container_width=True) 
 
 #End-------------------------------------------------------------------------------------
 
