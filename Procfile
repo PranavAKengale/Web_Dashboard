@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run my_app.py --server.headless=true
+web: sh setup.sh && streamlit run my_app.py 
