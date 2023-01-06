@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run my_app.py --server.enableCORS=false
+web: sh setup.sh && streamlit run my_app.py --server.headless=true
